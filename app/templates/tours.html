@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="span8 blog">
+        <article class="clearfix">
+            <a href="blog-single.htm"><img src="{{ url_for('static', filename='img/gallery/gallery-img-8-4col.jpg')}}" alt="Post Thumb" class="align-left"></a>
+            <h4 class="title-bg"><a href="blog-single.htm">A subject that is beautiful in itself</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. </p>
+        </article>
+    </div>
+
+    <div class="span4 sidebar">
+        {% include '_side_bar.html' %}
+    </div>
+
+</div>
+
+{% endblock %}

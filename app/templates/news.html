@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+
+    <!-- Blog Posts -->
+    <div class="span8 blog">
+        <!-- Blog Post -->
+        {% for new in news %}
+        <article class="">
+            <h3 class="title-bg">
+                <a href="#">{{ new.title }}</a>
+            </h3>
+            <div class="post-summary">
+                <a href="#">
+                    <img src="{{url_for('static', filename='img/gallery/post-img-1.jpg') }}" alt="Post Thumb">
+                </a>
+                <p>
+                    {{ new.body }}
+                </p>
+                <div class="post-summary-footer">
+                    <!-- <button  class="btn btn-small btn-inverse" type="button" name="button">Read more</button> -->
+                    <ul class="post-data">
+                        <li><i class="">09/04/15</i></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+        <!-- End Blog Post -->
+
+        <!-- Blog Post -->
+        <article class="">
+            <h3 class="title-bg">
+                <a href="#">Остров Санторини-лучшее место для отдыха</a>
+            </h3>
+            <div class="post-summary">
+                <a href="#">
+                    <img src="{{url_for('static', filename='img/gallery/post-img-3.jpg') }}" alt="Post Thumb">
+                </a>
+                <p>
+                    Одним из самых красивых и романтических мест на земле считается остров Санторини у берегов Греции!
+                    Мифические рассказы говорят о том, что он имеет прямое отношение к легендарной Атлантиде. Наверное, поэтому множество туристов всего мира для отдыха выбирают эти загадочные места. Учёные выдвигают разные версии гибели Атлантиды. Платон в своём мифе об этом острове высказал предположение, что он перестал существовать 9 000 лет назад, но это маловероятно. Более правдоподобно выглядит версия гибели Атлантиды, в которой говорится о том, что она погибла 1 500 лет тому назад, во время извержения вулкана Санторин.
+                </p>
+                <div class="post-summary-footer">
+                    <!-- <button  class="btn btn-small btn-inverse" type="button" name="button">Read more</button> -->
+                    <ul class="post-data">
+                        <li><i class="">10/04/15</i></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <!-- End Blog Post -->
+
+        <!-- Blog Post -->
+        <article class="">
+            <h3 class="title-bg">
+                <a href="#">Пять спрятанных пляжей юга Франции</a>
+            </h3>
+            <div class="post-summary">
+                <a href="#">
+                    <img src="{{url_for('static', filename='img/gallery/post-img-2.jpg') }}" alt="Post Thumb">
+                </a>
+                <p>Французская Ривьера невероятно популярна, однако это не означает, что здесь нет пляжей, которые сохранили свою природную красоту. Именно здесь, спрятавшись от шума и суеты цивилизации, могут провести свой отпуск любители солнца и волн. Если понравилась идея уединиться на одном из спрятанных пляжей юга Франции, нижеизложенный список пригодиться.
+                Расположенный в небольшом городке Теуль-сюр-Мер, пляж l’Aiguille и парк Le Pointe являются настоящим природным Эдемом. Пляж уютно окантовывает несколько миниатюрных бухт, у его каменных образований можно сделать несколько интересных фотографий, а вода здесь всегда чистая. Здесь многолюдно не бывает, так что шумные города и переполненные курорты кажутся чем-то далеким-далеким.
+                </p>
+                <div class="post-summary-footer">
+                    <!-- <button  class="btn btn-small btn-inverse" type="button" name="button">Read more</button> -->
+                    <ul class="post-data">
+                        <li><i class="">11/04/16</i></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <!-- End Blog Post -->
+
+    </div>
+    <!-- End Blog Posts -->
+
+    <div class="span4 sidebar">
+        {% include "_side_bar.html" %}
+    </div>
+
+</div>
+
+{% endblock %}

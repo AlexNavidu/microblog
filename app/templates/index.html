@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Begin Headline -->
+<div class="row headline">
+
+    <!-- Headline Text -->
+    <!-- <div class="span8">
+        <h1>His, {{ user.username }}</h1> <br />
+        {% for post in posts %}
+        <div class="">
+            <p>{{ post.author.username}} says: <b> {{post.body}}</b></p>
+        </div>
+        {% endfor %}
+        A Big Theme in a Small Package.</h3>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium vulputate magna sit amet blandit.</p>
+        <p>Cras rutrum, massa non blandit convallis, est lacus gravida enim, eu fermentum ligula orci et tortor. In sit amet nisl ac leo pulvinar molestie. Morbi blandit ultricies ultrices.</p>
+        <a href="#"><i class="icon-plus-sign"></i>Read More</a>
+    </div> -->
+    <!-- End Headline -->
+
+    <!-- Headline Text -->
+    <div class="row">
+        <div class="span8">
+            <h1>Туристический сервис</h1> <br />
+            <h5>
+            Если вы устали от суеты и города, работы и напряжения, предлогаем вам отличные путевки!
+            </h5>
+            <article class="">
+                <div class="post-summary">
+                    <a href="#">
+                        <img src="{{url_for('static', filename='img/gallery/slider-img-2.jpg')}}" alt="Post Thumb">
+                    </a>
+                </div>
+            </article>
+            <blockquote cite="http://">
+                Когда так много позади
+Всего, в особенности - горя,
+Поддержки чьей-нибудь не жди,
+Сядь в поезд, высадись у моря.
+                <small>
+                Знаменитый
+                <cite title="Source Title">Иосиф Бродский</cite>
+                </small>
+            </blockquote>
+        </div>
+        <div class="span4 sidebar">
+            {% include "_side_bar.html" %}
+        </div>
+    </div>
+    <!-- End Headline -->
+</div>
+<!-- End  Headline-->
+{% endblock %}

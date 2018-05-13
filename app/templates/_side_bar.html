@@ -1,0 +1,32 @@
+<!-- Blog Sidebar-->
+
+    <!-- Search -->
+    <section>
+        <div class="input-append">
+            <form class="" action="#" method="">
+                <input  class="place_for_search" id="text-to-find" type="text" name="" value="" size="16" placeholder="Поиск..." autofocus>
+                <button class="button_for_turn_back btn" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" name="button" title="Отменить поиск">
+                    <i class="icon-remove"></i>
+                </button>
+                <button class="button_for_search btn" type="submit" name="button" onclick="javascript: FindOnPage('text-to-find',true); return false;" title="Начать поиск">
+                    <i class="icon-search"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- End Search-->
+
+    <!-- Categories -->
+    <h5 class="title-bg">Меню сайта</h5>
+    <ul class="post-category-list">
+        <li><a href="{{url_for("index")}}"><i class="icon-plus-sign"></i>Главная</a></li>
+    </ul>
+    <ul class="post-category-list">
+        <li><a href="{{url_for("news")}}"><i class="icon-plus-sign"></i>Новости</a></li>
+    </ul>
+    <ul class="post-category-list">
+        <li><a href="{{url_for("tours")}}"><i class="icon-plus-sign"></i>Туры</a></li>
+    </ul>
+    <!-- End Categories -->
+
+<!-- End Blog Sidebar -->
